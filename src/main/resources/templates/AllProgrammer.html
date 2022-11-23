@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>All Programmer Page</title>
+</head>
+
+<body>
+	<h1>All Programmer</h1>
+	<h2 th:text="${msg}"></h2>
+	
+	<table>
+		<tr th:each="p: ${programmer}">
+			<td th:text="${p.pId}">
+			<td th:text="${p.pName}">
+			<td th:text="${p.pLang}">
+			</td>
+		</tr>
+	</table>
+	
+</body>
+
+</html>
